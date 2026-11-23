@@ -16,12 +16,49 @@ h1 {
   color: blueviolet;
 }
 
-li {
+.styling-list {
   padding-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-li::after {
+.styling-list::after {
   content: "⭐";
+  color: blue;
+  font-size: xx-large;
+}
+.styling-list:nth-child(odd) {
+  background-color: blue;
+}
+.styling-list:first-child {
+  background-color: red;
+}
+.styling-list:last-child {
+  background-color: yellow;
+}
+.not:not(:last-child) {
+  background-color: black;
+  color: wheat;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3rem;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition-duration: 10ms;
+  background-color: darkorchid;
+  color: white;
+}
+button:active {
+  transform: scale(0.95);
+  transition-duration: 10ms;
 }
