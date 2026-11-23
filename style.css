@@ -11,6 +11,17 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-h1::before {
-  text-decoration: overline;
+.before_line::before {
+  content: "----";
+  color: blueviolet;
+}
+
+li {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li::after {
+  content: "⭐";
 }
